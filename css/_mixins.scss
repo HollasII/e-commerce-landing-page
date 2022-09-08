@@ -1,0 +1,71 @@
+@mixin links {
+  a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: map-get($map: $colors , $key:secondary );  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin liner {
+  #product-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 28px;
+      // margin: 4px 0;
+    }
+
+    #line{
+      background: map-get($colors , secondary );
+      width: 110px;
+      height: 6px;
+      margin: 3px 0;
+      border-radius: 3px;
+
+      &:last-of-type{
+        width: 60px;
+      }
+    }
+  }
+}
+
+@mixin diver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 308px;
+  height: 361px;
+}
+
+@mixin pink {
+  @include diver;
+  background: map-get($colors , prod );
+}
+
+@mixin main {
+  @include diver;
+  background: map-get($colors , main );
+}
+
+@mixin flexing{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

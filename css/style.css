@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding: 0 50px;
+  display: grid;
+  width: 100%;
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding-top: 30px;
+}
+body header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+body header ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+}
+body header ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+body header .right #search label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header .right #search label img {
+  cursor: pointer;
+}
+body header .right #search label input {
+  display: none;
+}
+body header .right a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header .right a {
+  padding: 16px 20px;
+  border: 3px solid #FAB3B6;
+}
+body header .right a:hover {
+  background: #FAB3B6;
+  border: 3px solid #000000;
+  color: #ffffff;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px;
+}
+body main .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  background: #FAB3B6;
+  padding: 20px 0;
+  margin: 25px 0;
+}
+body main .hero .hero-image {
+  width: 727px;
+  height: 526px;
+  background: url("../images/image 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .hero #hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+  text-transform: capitalize;
+}
+body main .hero #hero-content h1 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 55px;
+}
+body main .hero #hero-content p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+body main .hero #hero-content a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .hero #hero-content a {
+  padding: 10px 15px;
+  border: 1px solid #000000;
+}
+body main .hero #hero-content a:hover {
+  cursor: pointer;
+  background: #000000;
+  color: #FAB3B6;
+  border: 1px solid #ffffff;
+}
+body main .products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .products #product-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .products #product-head h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+body main .products #product-head #line {
+  background: #000000;
+  width: 110px;
+  height: 6px;
+  margin: 3px 0;
+  border-radius: 3px;
+}
+body main .products #product-head #line:last-of-type {
+  width: 60px;
+}
+body main .products #products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+body main .products #products .kit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+body main .products #products .kit .image {
+  width: 308px;
+  height: 361px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FAB3B6;
+}
+body main .products #products .kit p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+body main .products #products .kit span {
+  font-weight: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #FAB3B6;
+}
+body main .load-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+body main .load-products #load-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+body main .load-products #load-top .line {
+  width: 550px;
+  height: 1px;
+  background: #000000;
+}
+body main .load-products #load-top h2 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  border: 1px solid #000000;
+  padding: 6px;
+}
+body main .load-products #load-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+body main .load-products #load-content div {
+  width: 620px;
+  height: 381px;
+  background: #FAB3B6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .load-products #load-content div:first-of-type {
+  padding: 15px;
+}
+body main .load-products #load-content div:first-of-type h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  width: 200px;
+}
+body main .load-products #load-content div:first-of-type .image {
+  background: url(../images/image\ 2.png) center no-repeat;
+  width: 414px;
+}
+body main .load-products #load-content div:last-of-type span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(../images/image\ 3.png) center no-repeat;
+}
+body main .load-products #load-content div:last-of-type span h4 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+}
+body main .load-products #load-content div:last-of-type span h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+}
+body main .all-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+body main .all-products #product-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .all-products #product-head h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+body main .all-products #product-head #line {
+  background: #000000;
+  width: 110px;
+  height: 6px;
+  margin: 3px 0;
+  border-radius: 3px;
+}
+body main .all-products #product-head #line:last-of-type {
+  width: 60px;
+}
+body main .all-products ul {
+  width: 785px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+body main .all-products ul li {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 20px;
+}
+body main .all-products ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+body main .all-products ul li a:hover {
+  color: #FAB3B6;
+}
+body main .all-products #products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+body main .all-products #products #holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  margin: 5px 0;
+}
+body main .all-products #products #holder h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+}
+body main .all-products #products #holder p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #FAB3B6;
+}
+body main .all-products #products span {
+  width: 288px;
+  height: 247px;
+}
+body main .all-products #products .pink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 308px;
+  height: 361px;
+  background: rgba(250, 179, 182, 0.65);
+}
+body main .all-products #products .pink span {
+  background: url(../images/brushes.png);
+}
+body main .all-products #products .pinker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 308px;
+  height: 361px;
+  background: rgba(250, 179, 182, 0.65);
+}
+body main .all-products #products .pinker span {
+  background: url(../images/image\ 4.png);
+}
+body main .all-products #products .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 308px;
+  height: 361px;
+  background: #FAB3B6;
+}
+body main .all-products #products .main span {
+  background: url(../images/unsplash_sYct_zI982g.png);
+}
+body main .all-products #products .mainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 308px;
+  height: 361px;
+  background: #FAB3B6;
+}
+body main .all-products #products .mainer span {
+  background: url(../images/image\ 4.png);
+}/*# sourceMappingURL=style.css.map */
